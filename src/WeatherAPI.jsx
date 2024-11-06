@@ -17,10 +17,12 @@ function WeatherAPI() {
     fetchApi()
   },[search]) 
   return (
-        <center>
+<>
+          <h1 className='Heading-App'>Weather App</h1>
     <div className='container'>
        <div className='Main'>
             <div className='input'>
+              <h2>Enter Name Here :</h2>
              <input type="search" placeholder='Enter City Name' value={search} onChange={(e)=>{setSearch(e.target.value)}}/>
              </div>
     {
@@ -48,8 +50,7 @@ function WeatherAPI() {
      
     </div>
     </div>
-    </center> 
- 
+    </>
   )
 }
 
